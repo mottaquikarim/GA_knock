@@ -109,6 +109,12 @@ Routes.register( '/login', function() {
      });
 });
 
+Routes.register( '/about', function() {
+
+    $('.data').empty()
+        .append('<p>This tool allows for folks who are locked out of GA NYC during weekend hours, etc to communicate with frontlines staff without the need for any personal information. Just knock!</p>');
+});
+
 Routes.register( '/notify', function() {
 
     var myFirebaseRef = new Firebase('https://knockknockga.firebaseio.com/');
